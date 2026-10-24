@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Floatly: Floating Timer & Work Hours Tracker for Mac</title>
-<meta name="description" content="A floating timer for Mac that stays on top of your work. Timers, stopwatches, Pomodoro routines and a work hours log with CSV export. No account, no subscription.">
-<meta name="keywords" content="floating timer mac, always on top timer, pomodoro timer mac, work hours tracker mac, menu bar timer, time tracker for freelancers">
+<title>Floatly: Floating Focus Timer for Studying &amp; Work on Mac</title>
+<meta name="description" content="A floating focus timer for Mac that stays on top of your notes and work. Pomodoro, stopwatches, daily study goals and a log of your hours. No account, no subscription.">
+<meta name="keywords" content="study timer mac, pomodoro timer mac, floating timer mac, always on top timer, focus timer for students, study tracker, work hours tracker mac, menu bar timer">
 <meta name="theme-color" content="#0a7cff">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -13,7 +13,7 @@
 <!-- Social sharing preview -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Floatly: a timer that floats above your work">
-<meta property="og:description" content="Timers, stopwatches and a work log in a small see-through box on your Mac. No account. No subscription.">
+<meta property="og:description" content="A focus timer for studying and work that floats over your Mac. Pomodoro, stopwatches and a log of your hours. No account. No subscription.">
 <meta property="og:image" content="https://floatlyapp.github.io/og.png">
 <meta property="og:url" content="https://floatlyapp.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -30,21 +30,21 @@
   </nav>
 
   <header class="hero">
-    <span class="eyebrow">Floating timer &amp; work log for Mac</span>
+    <span class="eyebrow">Focus timer for studying &amp; work on Mac</span>
     <h1>A timer that <span>floats above your&nbsp;work.</span></h1>
-    <p class="lead">Timers, stopwatches and a work log in a small see-through box in the corner of your Mac. <strong>No account. No subscription.</strong></p>
+    <p class="lead">Timers, stopwatches and a log of your study and work hours, in a small see-through box in the corner of your Mac. <strong>No account. No subscription.</strong></p>
     <div class="cta">
       <!-- At launch: change this <span> into <a href="https://apps.apple.com/app/idXXXX?pt=XXXX&ct=website"> -->
       <span class="badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg>
         Coming soon to the Mac App Store
       </span>
-      <span class="small">Free to download · Pro €9.99 once · macOS 13 Ventura or later</span>
+      <span class="small">Free to download · Pro €9.99 once · <a href="#pricing">Compare Free and Pro</a></span>
     </div>
 
     <div class="stage" role="img" aria-label="A Mac desktop with the Floatly box floating in the top-right corner, showing three timers over a document window">
       <div class="menubar">
-        <b>Pages</b><span>File</span><span>Edit</span><span>View</span>
+        <b>Notes</b><span>File</span><span>Edit</span><span>View</span>
         <span class="right"><span class="pill">32:14</span><span>🔋</span><span>Fri 10:42</span></span>
       </div>
       <div class="win">
@@ -59,11 +59,11 @@
       <div class="float">
         <div class="row sw">
           <svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="14" fill="none" stroke="rgba(10,124,255,.2)" stroke-width="5"/><circle cx="18" cy="18" r="14" fill="none" stroke="#0a7cff" stroke-width="5" stroke-linecap="round" stroke-dasharray="58 88" transform="rotate(-90 18 18)"/></svg>
-          <span class="name">Deep work<small>Stopwatch · Client site</small></span><span class="t">32:14</span>
+          <span class="name">Thesis · Chapter 3<small>Stopwatch · goal 2 h</small></span><span class="t">32:14</span>
         </div>
         <div class="row">
           <svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="14" fill="none" stroke="rgba(255,120,107,.25)" stroke-width="5"/><circle cx="18" cy="18" r="14" fill="none" stroke="#ff786b" stroke-width="5" stroke-linecap="round" stroke-dasharray="35 88" transform="rotate(-90 18 18)"/></svg>
-          <span class="name">Client call<small>Timer</small></span><span class="t">12:05</span>
+          <span class="name">Statistics<small>Pomodoro · focus</small></span><span class="t">12:05</span>
         </div>
         <div class="row">
           <svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="14" fill="none" stroke="rgba(69,204,158,.3)" stroke-width="5"/><circle cx="18" cy="18" r="14" fill="none" stroke="#2fbf8c" stroke-width="5" stroke-linecap="round" stroke-dasharray="88 88" transform="rotate(-90 18 18)"/></svg>
@@ -80,27 +80,61 @@
     </div>
   </header>
 
-  <!-- Freelancers -->
+  <!-- Pricing -->
+  <section class="block" id="pricing">
+    <div class="kicker">Pricing</div>
+    <h2 class="big">Free to start. Pro for €9.99, once.</h2>
+    <p class="sub">No subscription and no renewals. Pro works on every Mac signed in to your Apple Account.</p>
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead>
+          <tr><th scope="col"></th>
+            <th scope="col">Free<span class="pr">€0</span></th>
+            <th scope="col" class="procol">Pro<span class="pr">€9.99 <small>once</small></span></th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Floating box and menu bar timer</th><td class="y"><span class="ck">✓</span></td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Hide the box with one click</th><td class="y"><span class="ck">✓</span></td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Stopwatches pause when your Mac sleeps</th><td class="y"><span class="ck">✓</span></td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Time's-up sound and notification</th><td class="y"><span class="ck">✓</span></td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Timers</th><td>up to 3</td><td data-pro class="y">unlimited</td></tr>
+          <tr><th scope="row">Stopwatches</th><td>1</td><td data-pro class="y">unlimited</td></tr>
+          <tr><th scope="row">Work log with charts and comparisons</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Daily goals per course or project</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">CSV export for invoices and timesheets</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Routines: Pomodoro, workouts, your own</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Asks before counting time you were away</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Hides during screen sharing and in full screen</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Snooze and ⌥⌘T shortcut</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Colour themes and transparency</th><td class="n">–</td><td data-pro class="y"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">Sounds</th><td>1</td><td data-pro class="y">14 + 1-min warning, hourly chime</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:12px">Prices are set by the App Store and may differ slightly by country.</p>
+  </section>
+
+  <!-- Students -->
   <section class="block split">
     <div>
-      <div class="kicker">For freelancers who bill by the hour</div>
-      <h2 class="big">See exactly where the day went.</h2>
-      <p class="sub">Start a stopwatch per client or task. Floatly logs every minute, so invoicing is a copy-paste, not a guess.</p>
+      <div class="kicker">For students</div>
+      <h2 class="big">Study sessions you can actually see.</h2>
+      <p class="sub">Put a Pomodoro over your lecture notes, set a daily goal for each course, and see at the end of the week where your study hours went.</p>
       <ul class="checks">
-        <li>Hours per task by day, week and month, with "vs last week" <span class="pro">PRO</span></li>
-        <li>Export any period to CSV for invoices and timesheets <span class="pro">PRO</span></li>
-        <li>Stopwatches pause when your Mac sleeps or locks, so your hours stay honest</li>
-        <li>Stepped away? Floatly asks before counting that time <span class="pro">PRO</span></li>
+        <li>The countdown floats over your notes, slides and browser, so focus time stays visible</li>
+        <li>Daily goals like "2 hours of statistics", with a ring that fills up <span class="pro">PRO</span></li>
+        <li>Hours per course and thesis by day, week and month <span class="pro">PRO</span></li>
+        <li>Stopwatches pause when you close the lid, so a forgotten timer never turns into a 6-hour "study session"</li>
       </ul>
     </div>
-    <div class="panel" aria-label="Example work log with a weekly bar chart">
-      <strong>This week</strong> <span class="small">· 31 h 20 min · ↑ 12% vs last week</span>
-      <div class="chart"><div style="height:62%"></div><div style="height:80%"></div><div style="height:48%"></div><div style="height:92%"></div><div class="today" style="height:70%"></div><div style="height:6%;opacity:.35"></div><div style="height:4%;opacity:.35"></div></div>
+    <div class="panel" aria-label="Example study log with a weekly bar chart">
+      <strong>This week</strong> <span class="small">· 20 h 15 min studied · ↑ 18% vs last week</span>
+      <div class="chart"><div style="height:55%"></div><div style="height:78%"></div><div style="height:40%"></div><div style="height:90%"></div><div class="today" style="height:66%"></div><div style="height:30%;opacity:.5"></div><div style="height:8%;opacity:.35"></div></div>
       <div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
       <div class="tasks">
-        <p><span><i class="dot" style="background:#0a7cff"></i>Client site redesign</span><b>14 h 05 min</b></p>
-        <p><span><i class="dot" style="background:#ff786b"></i>Calls &amp; email</span><b>6 h 40 min</b></p>
-        <p><span><i class="dot" style="background:#2fbf8c"></i>Thesis</span><b>10 h 35 min</b></p>
+        <p><span><i class="dot" style="background:#0a7cff"></i>Thesis</span><b>9 h 20 min</b></p>
+        <p><span><i class="dot" style="background:#ff786b"></i>Statistics</span><b>6 h 45 min</b></p>
+        <p><span><i class="dot" style="background:#2fbf8c"></i>Biology reading</span><b>4 h 10 min</b></p>
       </div>
     </div>
   </section>
@@ -125,7 +159,19 @@
         <div>Focus<b>25:00</b></div>
         <div>Long<b>15:00</b></div>
       </div>
-      <p class="small" style="margin:14px 0 0">Focus time goes straight into your work log.</p>
+      <p class="small" style="margin:14px 0 0">Focus time goes straight into your log.</p>
+    </div>
+  </section>
+
+  <!-- Freelancers (short) -->
+  <section class="block">
+    <div class="panel mini">
+      <div>
+        <div class="kicker">Also for freelancers</div>
+        <h3>Bill your hours without guessing.</h3>
+        <p class="small">Start a stopwatch per client, then export any day, week or month to CSV for invoices and timesheets. <span class="pro">PRO</span></p>
+      </div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
     </div>
   </section>
 
@@ -147,7 +193,7 @@
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.5A8.5 8.5 0 1 1 10.5 3.5a6.5 6.5 0 0 0 10 10z"/></svg></div>
         <h3>Honest hours</h3>
-        <p>Stopwatches pause when your Mac sleeps, locks or shuts down. No more 9-hour "meetings" by accident.</p>
+        <p>Stopwatches pause when your Mac sleeps, locks or shuts down. No more 6-hour "study sessions" by accident.</p>
       </div>
       <div class="card">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V11M10 20V5M16 20v-7M2 20h20"/></svg></div>
@@ -167,45 +213,6 @@
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="block" id="pricing">
-    <div class="kicker">Pricing</div>
-    <h2 class="big">Pay once. Keep it forever.</h2>
-    <p class="sub">Start free. Upgrade to Pro with a single purchase, with no subscription and no renewals. Pro works on every Mac signed in to your Apple Account.</p>
-    <div class="pricing">
-      <div class="plan">
-        <h3>Free</h3>
-        <div class="price">€0</div>
-        <span class="small">Free forever</span>
-        <ul>
-          <li>Up to 3 timers and 1 stopwatch</li>
-          <li>Floating box and menu bar timer</li>
-          <li>Hide the box with one click</li>
-          <li>Stopwatches pause when your Mac sleeps</li>
-          <li>Time's-up sound and notification</li>
-          <li>3 timer colours</li>
-          <li class="no">Work log, routines and themes are Pro</li>
-        </ul>
-      </div>
-      <div class="plan p">
-        <span class="tag">One-time purchase</span>
-        <h3>Pro</h3>
-        <div class="price">€9.99 <small>once</small></div>
-        <span class="small">Everything in Free, plus:</span>
-        <ul>
-          <li>Unlimited timers and stopwatches</li>
-          <li>Work log with charts, comparisons and daily goals</li>
-          <li>CSV export for invoices and timesheets</li>
-          <li>Routines: Pomodoro, workouts, your own</li>
-          <li>Asks before counting time you were away</li>
-          <li>Hides during screen sharing and in full screen, snooze, ⌥⌘T</li>
-          <li>Colour themes, transparency, 14 sounds, 1-minute warning, hourly chime</li>
-        </ul>
-      </div>
-    </div>
-    <p class="small" style="margin-top:12px">Prices are set by the App Store and may differ slightly by country.</p>
-  </section>
-
   <!-- FAQ -->
   <section class="block narrow" id="faq">
     <div class="kicker">FAQ</div>
@@ -220,7 +227,7 @@
 
   <div class="maker narrow" style="margin-left:auto;margin-right:auto">
     <img src="icon.png" alt="">
-    <p><strong>Made by an independent developer in Finland</strong> who wanted a timer that stays in sight, without another account or subscription. Ideas and feedback are very welcome: <a href="mailto:floatly.focusapp@gmail.com">floatly.focusapp@gmail.com</a></p>
+    <p><strong>Made by a student in Finland</strong> who wanted to make focus time visible. I built the timer I wished I had: always in sight, honest about the hours, and without a subscription. Ideas and feedback are very welcome: <a href="mailto:floatly.focusapp@gmail.com">floatly.focusapp@gmail.com</a></p>
   </div>
 
   <footer>

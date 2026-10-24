@@ -117,6 +117,12 @@ h2.big { font-size: clamp(28px, 4vw, 40px); line-height: 1.12; letter-spacing: -
 .steps div b { display: block; font-size: 20px; font-variant-numeric: tabular-nums; }
 .steps div.now { background: linear-gradient(140deg, var(--accent2), var(--accent)); color: #fff; }
 
+.panel.mini { display: flex; align-items: center; gap: 24px; padding: 26px 28px; }
+.panel.mini h3 { font-size: 22px; letter-spacing: -.015em; margin: 6px 0 6px; }
+.panel.mini p { margin: 0; font-size: 16px; }
+.panel.mini svg { width: 64px; height: 64px; flex: none; margin-left: auto; color: var(--accent); opacity: .85; }
+@media (max-width: 560px) { .panel.mini svg { display: none; } }
+
 /* feature grid */
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px;
@@ -128,18 +134,27 @@ h2.big { font-size: clamp(28px, 4vw, 40px); line-height: 1.12; letter-spacing: -
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
 .card.hi { border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
 
-/* pricing */
-.pricing { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
-.plan { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 26px; }
-.plan.p { border: 1.5px solid var(--accent); box-shadow: var(--shadow); position: relative; }
-.plan h3 { margin: 0; font-size: 20px; }
-.price { font-size: 40px; font-weight: 750; letter-spacing: -.03em; margin: 6px 0 2px; }
-.price small { font-size: 16px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
-.plan ul { list-style: none; padding: 0; margin: 18px 0 0; font-size: 15px; }
-.plan li { padding: 8px 0; border-top: 1px solid var(--line); }
-.plan li.no { color: var(--muted); }
-.tag { position: absolute; top: -12px; right: 20px; font-size: 12px; font-weight: 700; color: #fff; padding: 4px 10px; border-radius: 999px;
-       background: linear-gradient(120deg, var(--accent2), var(--deep)); }
+/* pricing matrix */
+.matrix-wrap { margin-top: 26px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow);
+               overflow: hidden; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.matrix { width: 100%; border-collapse: collapse; font-size: 15px; }
+.matrix th, .matrix td { padding: 11px 18px; border-top: 1px solid var(--line); text-align: center; }
+.matrix tbody th { text-align: left; font-weight: 500; }
+.matrix thead th { border-top: 0; font-size: 18px; padding-top: 20px; padding-bottom: 16px; vertical-align: bottom; }
+.matrix thead th .pr { display: block; font-size: 28px; font-weight: 750; letter-spacing: -.02em; }
+.matrix thead th .pr small { font-size: 14px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.matrix th:nth-child(2), .matrix td:nth-child(2) { width: 22%; }
+.matrix th:nth-child(3), .matrix td:nth-child(3) { width: 26%; background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.matrix thead .procol { color: var(--accent); }
+.matrix td.y { color: var(--accent); font-weight: 650; }
+.matrix .ck { font-size: 18px; line-height: 1; }
+.matrix td.n { color: var(--muted); opacity: .6; }
+@media (max-width: 560px) {
+  .matrix { font-size: 13.5px; }
+  .matrix th, .matrix td { padding: 9px 8px; }
+  .matrix tbody th { padding-left: 14px; }
+  .matrix thead th .pr { font-size: 21px; }
+}
 
 /* faq */
 details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin: 10px 0; }
