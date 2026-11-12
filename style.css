@@ -188,3 +188,6 @@ footer a { margin-right: 18px; text-decoration: none; }
   nav { gap: 14px; }
   .maker { flex-direction: column; text-align: center; }
 }
+.doc .caps { font-size: 14px; line-height: 1.55; }
+.doc ul { padding-left: 20px; }
+.doc li { margin: 8px 0; }
